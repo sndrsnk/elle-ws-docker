@@ -1,0 +1,12 @@
+version: '0.1'
+services:
+  elle-ws-ubuntu:
+    container_name: elle-ws-ubuntu
+    build:
+      context: ./
+    user: 'user'
+    environment:
+      - DISPLAY
+    volumes:
+      - ./ellestore:/home/user/ellestore
+      - /tmp/.X11-unix/:/tmp/.X11-unix/
