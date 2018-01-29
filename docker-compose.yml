@@ -1,4 +1,4 @@
-version: '0.1'
+version: '2'
 services:
   elle-ws-ubuntu:
     container_name: elle-ws-ubuntu
