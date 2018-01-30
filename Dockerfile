@@ -24,7 +24,7 @@ RUN mkdir -p /home/user/downloads && cd /home/user/downloads && wget https://sou
 
 RUN cd /home/user && wget https://sourceforge.net/projects/elle/files/elle/elle-2.7.1rel.tar.gz && tar xvzf elle-2.7.1rel.tar.gz
 
-RUN mv elle elle-2.7.1 && cd elle-2.7.1/elle && ./install.sh wx
+RUN mv /home/user/elle /home/user/elle-2.7.1 && cd /home/user/elle-2.7.1/elle && ./install.sh wx
 
 # Documentation has this the other way around
 RUN ln -s /home/user/elle-2.7.1/elle /usr/local/elle
